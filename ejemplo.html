@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de Página Web con Menú de Navegación y Formulario de Contacto</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			color: #333;
+			text-align: center;
+		}
+		nav {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-right: 20px;
+			font-size: 18px;
+		}
+		nav a:hover {
+			color: #f2f2f2;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #f2f2f2;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">Inicio</a>
+		<a href="#">Acerca de nosotros</a>
+		<a href="#">Servicios</a>
+		<a href="#">Contacto</a>
+	</nav>
+	<div class="container">
+		<h1>Bienvenido a nuestra página web</h1>
+		<p>En nuestra página web podrás encontrar información sobre nuestros servicios y contactarnos para obtener más detalles.</p>
+		<form action="#" method="post">
+			<label for="name">Nombre:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Mensaje:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+</body>
+</html>
